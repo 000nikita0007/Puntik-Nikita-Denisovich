@@ -3,15 +3,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int number, count = 0;
+
         while (true) {
             System.out.println("Введи число , только не проебись");
-            int number, count = 0;
+
             try {
                 number = new Scanner(System.in).nextInt();
             } catch (Exception ex) {
                 System.out.println("Я же сказал не проебись");
                 continue;
             }
+
             if (number < 15 && number > 0) {
                 System.out.println("Group1");
                 count = 1;
@@ -26,7 +29,6 @@ public class Main {
             for (int i = 0; i < count; i++) {
                 System.out.println("— Подонок, это было последнее пиво. Я убью тебя!\n" +
                         "— И я убью тебя, друг. Я тоже тебя убью. ");
-                ;
             }
             break;
         }
