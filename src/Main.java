@@ -24,7 +24,8 @@ public class Main {
             } else System.out.println("Usless group");
 
             for (int i = 0; i < count; i++) {
-                System.out.println("Поцелуй мой железный зад ");
+                System.out.println("— Подонок, это было последнее пиво. Я убью тебя!\n" +
+                        "— И я убью тебя, друг. Я тоже тебя убью. ");
                 ;
             }
             break;
