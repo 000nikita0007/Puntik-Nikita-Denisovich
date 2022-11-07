@@ -1,3 +1,5 @@
+package Lesson4;
+
 import java.net.SocketImpl;
 import java.util.Scanner;
 
