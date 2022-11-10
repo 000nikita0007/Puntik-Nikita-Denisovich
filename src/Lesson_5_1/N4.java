@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class N4 {
     public static void main(String[] args) {
-        System.out.println("Enter massive size n");
+        System.out.println("Enter massive size n x n");
         int n = new Scanner(System.in).nextInt();
         int array[][] = new int[n][n];
         for (int i = 0; i < array.length; i++) {

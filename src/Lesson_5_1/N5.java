@@ -17,8 +17,9 @@ public class N5 {
             }
         }
         System.out.println(Arrays.deepToString(array).replace("], ", "]\n"));
-        for(int i=0;i<array.length;i++)
-        {Arrays.sort(array[i]);}
+        for (int i = 0; i < array.length; i++) {
+            Arrays.sort(array[i]);
+        }
         System.out.println(Arrays.deepToString(array).replace("], ", "]\n"));
     }
 }
