@@ -21,6 +21,6 @@ public class N3 {
                 sum = sum + array[i][j];
             }
         }
-        System.out.println("Summa = " +sum);
+        System.out.println("Summa = " + sum);
     }
 }
