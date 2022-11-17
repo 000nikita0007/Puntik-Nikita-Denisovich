@@ -13,7 +13,7 @@ public class Triangle implements Figure {
     @Override
     public float getSquare() {
         p=getPerimeter();
-        return Math.abs(p*(p-a)*(p-b)*(p-c));
+        return (float) Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
 
     @Override
