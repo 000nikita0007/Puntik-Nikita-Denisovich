@@ -1,7 +1,6 @@
 import Vector.Vector3d;
 import Vector.Vector2d;
 
-import java.net.SocketImpl;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -19,7 +18,13 @@ public class Main {
         System.out.println("Скалярное произведение3d= " + Vector3d.multiplication(vector3d1, vector3d2));
         Vector2d.sum(vetcor2d, vetcor2d1);
         Vector3d.sum(vector3d1, vector3d2);
-        Vector2d.minus(vetcor2d,vetcor2d1);
-        Vector3d.minus(vector3d1,vector3d2);
+        Vector2d.minus(vetcor2d, vetcor2d1);
+        Vector3d.minus(vector3d1, vector3d2);
+        System.out.println("Введие желаемое количество двумерных векторов");
+        int n = new Scanner(System.in).nextInt();
+        Vector2d.generate(n);
+        System.out.println("Введие желаемое количество трёхмерных векторов");
+        int k = new Scanner(System.in).nextInt();
+        Vector3d.generate(k);
     }
 }

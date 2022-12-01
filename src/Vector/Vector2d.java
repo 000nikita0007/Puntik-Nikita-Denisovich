@@ -1,5 +1,7 @@
 package Vector;
 
+import java.util.Objects;
+
 import static Vector.Const.VECTOR2D;
 
 public class Vector2d {
@@ -32,5 +34,21 @@ public class Vector2d {
         double minusx = vector2d1.x - vector2d2.x;
         double minusy = vector2d1.y - vector2d2.y;
         System.out.println("Вычитание двух векторов2d=  {x=" + minusx + ", y=" + minusy + "}");
+    }
+
+    public static void generate(int n) {
+        Vector2d[] vectors = new Vector2d[n];
+        for (int i = 0; i < n; i++) {
+            vectors[i] = new Vector2d(Math.random()*20, Math.random()*20);
+            vectors[i].print();
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vector2d vector2d = (Vector2d) o;
+        return Double.compare(vector2d.x, x) == 0 && Double.compare(vector2d.y, y) == 0;
     }
 }
