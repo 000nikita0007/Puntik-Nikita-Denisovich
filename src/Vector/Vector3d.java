@@ -23,4 +23,11 @@ public class Vector3d {
         return vector3d1.x * vector3d1.y * vector3d1.z + vector3d2.x * vector3d2.y * vector3d2.z
                 + vector3d3.x * vector3d3.y * vector3d3.z;
     }
+
+    public static void sum(Vector3d vector3d1, Vector3d vector3d2, Vector3d vector3d3) {
+        double sumx = vector3d1.x + vector3d2.x + vector3d3.x;
+        double sumy = vector3d1.y + vector3d2.y + vector3d3.y;
+        double sumz = vector3d1.z + vector3d2.z + vector3d3.z;
+        System.out.println("Сумма двух векторов=  {x=" + sumx + ", y=" + sumy + " z=" + sumz + "}");
+    }
 }
