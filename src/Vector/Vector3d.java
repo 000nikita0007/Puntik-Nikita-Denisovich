@@ -19,7 +19,8 @@ public class Vector3d {
         return Math.sqrt(x * x + y * y + z * z);
     }
 
-    public double multiplication3d(Vector3d vector3d1, Vector3d vector3d2, Vector3d vector3d3) {
-        return vector3d1.x * vector3d1.y * vector3d1.z;
+    public static double multiplication(Vector3d vector3d1, Vector3d vector3d2, Vector3d vector3d3) {
+        return vector3d1.x * vector3d1.y * vector3d1.z + vector3d2.x * vector3d2.y * vector3d2.z
+                + vector3d3.x * vector3d3.y * vector3d3.z;
     }
 }

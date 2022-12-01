@@ -17,8 +17,7 @@ public class Vector2d {
     public double length() {
         return Math.sqrt(x * x + y * y);
     }
-
-    public static double multiplication1(Vector2d vector2d1, Vector2d vector2d2) {
+    public static double  multiplication(Vector2d vector2d1, Vector2d vector2d2) {
         return vector2d1.x * vector2d1.y + vector2d2.x * vector2d2.y;
     }
 }
