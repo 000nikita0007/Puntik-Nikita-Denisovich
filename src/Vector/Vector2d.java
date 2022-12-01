@@ -25,6 +25,12 @@ public class Vector2d {
     public static void sum(Vector2d vector2d1, Vector2d vector2d2) {
         double sumx = vector2d1.x + vector2d2.x;
         double sumy = vector2d1.y + vector2d2.y;
-        System.out.println( "Сумма двух векторов=  {x=" + sumx + ", y=" + sumy + "}");
+        System.out.println("Сумма двух векторов2d=  {x=" + sumx + ", y=" + sumy + "}");
+    }
+
+    public static void minus(Vector2d vector2d1, Vector2d vector2d2) {
+        double minusx = vector2d1.x - vector2d2.x;
+        double minusy = vector2d1.y - vector2d2.y;
+        System.out.println("Вычитание двух векторов2d=  {x=" + minusx + ", y=" + minusy + "}");
     }
 }
