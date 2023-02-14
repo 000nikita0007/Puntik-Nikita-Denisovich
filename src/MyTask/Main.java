@@ -49,11 +49,11 @@ public class Main {
         Collections.sort(myNewArray);
         for (int i = 0; i < myNewArray.size(); i++)
             System.out.print(myNewArray.get(i));
+        FileOutputStream fout1;
         try {
-            fout = new FileOutputStream(way, false);
+            fout1 = new FileOutputStream(way, false);
             for (int i = 0; i < people.size(); i++) {
-                fout.write(myNewArray.get(i).toString().getBytes());
-                fout.close();
+                fout1.write(myNewArray.get(i).toString().getBytes());
             }
         } catch (IOException ex) {
             ex.printStackTrace();
