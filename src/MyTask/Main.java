@@ -12,13 +12,13 @@ public class Main {
         Person person2 = new Person("Dimach", "Dima", "Male", 40);
         Person person3 = new Person("Puntik", "Darya", "FeMale", 20);
         Person person4 = new Person("Vladich", "Vlad", "Male", 21);
-        ArrayList<Person> people = new ArrayList<>();
+        List<Person> people = new ArrayList<>();
+        FileOutputStream fout;
         people.add(person1);
         people.add(person2);
         people.add(person3);
         people.add(person4);
-        FileOutputStream fout = null;
-        System.out.println("Введите ваш путь C:\\Users\\Lenovo\\Desktop ");
+        System.out.println("Введите ваш путь C:\\Users\\Lenovo\\Desktop\\название файла.txt ");
         String way = new Scanner(System.in).nextLine();
         try {
             fout = new FileOutputStream(way, false);
@@ -28,7 +28,7 @@ public class Main {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        ArrayList<Person> myNewArray = new ArrayList<>();
+        List<Person> myNewArray = new ArrayList<>();
         try {
             FileInputStream fileInputStream = new FileInputStream(way);
             String fileContent = new String(fileInputStream.readAllBytes(), StandardCharsets.UTF_8);
@@ -49,11 +49,11 @@ public class Main {
         Collections.sort(myNewArray);
         for (int i = 0; i < myNewArray.size(); i++)
             System.out.print(myNewArray.get(i));
-        FileOutputStream fout1 = null;
         try {
-            fout1 = new FileOutputStream(way, false);
+            fout = new FileOutputStream(way, false);
             for (int i = 0; i < people.size(); i++) {
-                fout1.write(myNewArray.get(i).toString().getBytes());
+                fout.write(myNewArray.get(i).toString().getBytes());
+                fout.close();
             }
         } catch (IOException ex) {
             ex.printStackTrace();
